@@ -9,7 +9,7 @@ services:
     volumes:
       - /srv/build/wheelhouse:/wheelhouse
       - /srv/build/archive:/archive
-      - /srv/build/build-requirements.txt:/app/requirements.txt
+      - /srv/build/requirements.txt:/app/requirements.txt
     environment:
       - HDF5_DIR=/usr/lib/x86_64-linux-gnu/hdf5/serial/
       - WHEELHOUSE=/wheelhouse
