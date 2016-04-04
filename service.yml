@@ -2,7 +2,7 @@ version: '2'
 
 services:
   wheel-factory:
-    image: obitec/wheel-factory
+    image: zapgo/wheel-factory
     build:
       context: ./factory
       dockerfile: Dockerfile
