@@ -7,7 +7,7 @@ RUN pip install --upgrade pip virtualenv wheel && virtualenv /env && mkdir -p /a
 
 # Non privaged user
 RUN adduser --disabled-password --gecos '' --no-create-home webapp && \
-    chown -R webapp:webapp /app
+    chown -R webapp:webapp /app && usermod -u 1000 webapp
 
 WORKDIR /app
 ENV HOME /app
